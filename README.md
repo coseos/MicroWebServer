@@ -40,7 +40,7 @@ provide the content. This is actually very easy and powerful.
 
 ### Example script
 
-'''
+```
 var Headers = Java.type("io.undertow.util.Headers");
 
 exchange.getResponseHeaders().put(Headers.CONTENT_TYPE, "text/html; charset=utf-8");
@@ -59,8 +59,7 @@ var html = (function() {/*<!doctype html>
 */}).toString().match(/[^]*\/\*([^]*)\*\/\}$/)[1];
 
 exchange.getResponseSender().send(html);
-
-'''
+```
 
 ## Authors
 
